@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Embed demo – U.S. Open Netball standings</title>
+<style>
+  body{font-family:Georgia,serif;max-width:960px;margin:0 auto;padding:24px 16px;color:#222}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  @media (max-width:800px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+  <h1>Demo host page</h1>
+  <p>This stands in for your website. Below, each board is a plain div plus one script tag.</p>
+
+  <h2>Full width</h2>
+  <div data-nl-ladder="ladies"></div>
+
+  <h2>Side by side (adapts to the narrower columns)</h2>
+  <div class="grid">
+    <div data-nl-ladder="ladies"></div>
+    <div data-nl-ladder="mixed"></div>
+  </div>
+
+  <script src="embed.js" defer></script>
+</body>
+</html>

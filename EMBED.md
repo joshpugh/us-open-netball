@@ -1,31 +1,24 @@
 # U.S. Open Netball standings – embed
 
-Hosted at https://joshpugh.github.io/us-open-netball/
+## Recommended: script embed (no iframe)
+Put a placeholder wherever each board should appear, and the script once per page.
 
-## Both divisions, with Ladies / Mixed tabs
 ```html
-<iframe class="nl-ladder" src="https://joshpugh.github.io/us-open-netball/?id=both" title="U.S. Open Netball Standings"
-  style="width:100%;border:0;min-height:600px" scrolling="no" loading="lazy"></iframe>
+<div data-nl-ladder="ladies"></div>
+<div data-nl-ladder="mixed"></div>
+<script src="https://joshpugh.github.io/us-open-netball/embed.js" defer></script>
 ```
 
-## One division per embed
-```html
-<iframe class="nl-ladder" src="https://joshpugh.github.io/us-open-netball/?d=ladies&id=ladies" title="U.S. Open Netball – Ladies Standings"
-  style="width:100%;border:0;min-height:600px" scrolling="no" loading="lazy"></iframe>
+- Renders straight into your page, so it never has its own scrollbar on mobile.
+- Adapts to the width of the column it sits in (not just the screen).
+- Styles are sealed off, so your site's CSS can't break it and it can't break your site.
+- Checks for new standings every minute.
+- Add `data-title="false"` to a div to hide the navy header bar, e.g. if your page already has a heading.
+- Brand colors: on your page, set `[data-nl-ladder]{--nl-brand:#0B1F4B;--nl-accent:#E4002B}` in CSS.
 
-<iframe class="nl-ladder" src="https://joshpugh.github.io/us-open-netball/?d=mixed&id=mixed" title="U.S. Open Netball – Mixed Standings"
-  style="width:100%;border:0;min-height:600px" scrolling="no" loading="lazy"></iframe>
-```
+Demo: https://joshpugh.github.io/us-open-netball/demo.html
 
-## Auto-height (paste once per page, below the iframes)
-Makes each iframe exactly as tall as the table on every screen size.
+## Fallback: iframe
 ```html
-<script>
-window.addEventListener("message", function (e) {
-  if (!e.data || e.data.type !== "nl-ladder-height") return;
-  document.querySelectorAll("iframe.nl-ladder").forEach(function (f) {
-    if (f.contentWindow === e.source) f.style.height = e.data.height + "px";
-  });
-});
-</script>
+<iframe src="https://joshpugh.github.io/us-open-netball/?d=ladies" style="width:100%;border:0;height:900px"></iframe>
 ```
