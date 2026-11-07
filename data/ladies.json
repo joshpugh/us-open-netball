@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T22:17:41.796Z",
+ "updated": "2026-11-07T22:37:42.773Z",
  "teams": [
   {
    "rank": 1,
@@ -110,8 +110,8 @@
    "pts": 5,
    "gd": -29,
    "form": "LWLLD",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235744_Tampa%20Bay%20Panthers.blob?generation=1793306267309886&alt=media",
-   "next": "Tampa Bay Panthers"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235748_Las%20Vegas%20Silver%20Foxes.blob?generation=1793306085487061&alt=media",
+   "next": "Las Vegas Silver Foxes"
   },
   {
    "rank": 8,
@@ -126,8 +126,8 @@
    "pts": 2,
    "gd": -43,
    "form": "LLLDL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235747_Club%20Allyanze.blob?generation=1793305969556709&alt=media",
-   "next": "Club Allyanze"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235744_Tampa%20Bay%20Panthers.blob?generation=1793306267309886&alt=media",
+   "next": "Tampa Bay Panthers"
   },
   {
    "rank": 9,
@@ -142,8 +142,8 @@
    "pts": 0,
    "gd": -29,
    "form": "LLLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228390_Chicago%20Ladies.blob?generation=1793305936441239&alt=media",
-   "next": "Chicago Ladies"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228388_Denver%20Blizzards%20Fury.blob?generation=1793306004516850&alt=media",
+   "next": "Denver Blizzards Fury"
   },
   {
    "rank": 10,
@@ -158,8 +158,8 @@
    "pts": 0,
    "gd": -30,
    "form": "LLLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228388_Denver%20Blizzards%20Fury.blob?generation=1793306004516850&alt=media",
-   "next": "Denver Blizzards Fury"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228400_Dorchester%20United%20Sports%20Club.blob?generation=1793306021057737&alt=media",
+   "next": "Dorchester United Sports Club"
   },
   {
    "rank": 11,
@@ -174,8 +174,8 @@
    "pts": 0,
    "gd": -46,
    "form": "LLLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228400_Dorchester%20United%20Sports%20Club.blob?generation=1793306021057737&alt=media",
-   "next": "Dorchester United Sports Club"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228390_Chicago%20Ladies.blob?generation=1793305936441239&alt=media",
+   "next": "Chicago Ladies"
   },
   {
    "rank": 12,
@@ -190,8 +190,8 @@
    "pts": 0,
    "gd": -59,
    "form": "LLLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235748_Las%20Vegas%20Silver%20Foxes.blob?generation=1793306085487061&alt=media",
-   "next": "Las Vegas Silver Foxes"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235747_Club%20Allyanze.blob?generation=1793305969556709&alt=media",
+   "next": "Club Allyanze"
   }
  ]
 }
