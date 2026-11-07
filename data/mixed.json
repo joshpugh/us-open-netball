@@ -1,8 +1,24 @@
 {
- "updated": "2026-11-07T20:22:00Z",
+ "updated": "2026-11-07T20:27:26.681Z",
  "teams": [
   {
    "rank": 1,
+   "name": "North Shore United",
+   "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228396_North%20Shore%20United.blob?generation=1793306135740725&alt=media",
+   "p": 2,
+   "w": 2,
+   "l": 0,
+   "d": 0,
+   "f": 37,
+   "a": 7,
+   "pts": 6,
+   "gd": 30,
+   "form": "WW",
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235743_Emerald%20City.blob?generation=1793306041854278&alt=media",
+   "next": "Emerald City"
+  },
+  {
+   "rank": 2,
    "name": "Mercenaries",
    "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228386_Mercenaries.blob?generation=1793306104647602&alt=media",
    "p": 2,
@@ -18,7 +34,7 @@
    "next": "Santa Monica Spirits Blaze"
   },
   {
-   "rank": 2,
+   "rank": 3,
    "name": "The Outlaws",
    "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228391_The%20Outlaws.blob?generation=1793306322281744&alt=media",
    "p": 2,
@@ -34,7 +50,7 @@
    "next": "Vancouver Comets Fire"
   },
   {
-   "rank": 3,
+   "rank": 4,
    "name": "Vancouver Comets Fire",
    "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235746_Vancouver%20Comets%20Fire.blob?generation=1793306343645769&alt=media",
    "p": 2,
@@ -50,34 +66,18 @@
    "next": "The Outlaws"
   },
   {
-   "rank": 4,
-   "name": "North Shore United",
-   "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228396_North%20Shore%20United.blob?generation=1793306135740725&alt=media",
-   "p": 1,
-   "w": 1,
-   "l": 0,
-   "d": 0,
-   "f": 22,
-   "a": 3,
-   "pts": 3,
-   "gd": 19,
-   "form": "W",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235743_Emerald%20City.blob?generation=1793306041854278&alt=media",
-   "next": "Emerald City"
-  },
-  {
    "rank": 5,
    "name": "Santa Monica Spirits Blaze",
    "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228394_Santa%20Monica%20Spirits%20Blaze.blob?generation=1793306220050196&alt=media",
-   "p": 1,
+   "p": 2,
    "w": 1,
-   "l": 0,
+   "l": 1,
    "d": 0,
-   "f": 14,
-   "a": 5,
+   "f": 18,
+   "a": 20,
    "pts": 3,
-   "gd": 9,
-   "form": "W",
+   "gd": -2,
+   "form": "LW",
    "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228386_Mercenaries.blob?generation=1793306104647602&alt=media",
    "next": "Mercenaries"
   },
