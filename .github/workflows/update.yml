@@ -1,6 +1,6 @@
 name: Update ladder
 
-# One long-running job refreshes the standings every 15 minutes for ~5.5 hours,
+# One long-running job refreshes the standings every 10 minutes for ~5.5 hours,
 # then starts its own replacement. This avoids GitHub's unreliable cron timing.
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ concurrency:
   cancel-in-progress: true   # a new loop replaces the old one
 
 env:
-  INTERVAL_MIN: 15
+  INTERVAL_MIN: 10
   RUN_FOR_MIN: 330
 
 jobs:
