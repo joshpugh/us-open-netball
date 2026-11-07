@@ -38,6 +38,7 @@
   .pts{font-weight:800;color:var(--accent)}
   .pos{color:var(--win)} .neg{color:var(--loss)}
   .form{display:inline-flex;gap:3px}
+  .form{flex-wrap:nowrap}
   .f{width:20px;height:20px;border-radius:4px;color:#fff;font-size:11px;font-weight:700;display:inline-grid;place-items:center}
   .f.W{background:var(--win)} .f.L{background:var(--loss)} .f.D{background:var(--draw)}
   .next img{width:24px;height:24px;border-radius:50%;object-fit:cover;border:1px solid var(--line);vertical-align:middle}
@@ -85,7 +86,7 @@
         <tr>
           <th>#</th><th class="team">Team</th><th>P</th><th>W</th><th class="c-l">L</th>
           <th class="c-d">D</th><th class="c-f">F</th><th class="c-a">A</th>
-          <th>GD</th><th>Pts</th><th class="c-form">Form</th><th class="c-next">Next</th>
+          <th>GD</th><th>Pts</th><th class="c-form" title="Last 5 games, latest first">Form</th><th class="c-next">Next</th>
         </tr>
       </thead>
       <tbody id="nl-body"><tr><td colspan="12" class="nl-msg">Loading standings…</td></tr></tbody>
@@ -116,7 +117,7 @@
     if (data.error){ body.innerHTML = '<tr><td colspan="12" class="nl-msg">Standings are unavailable right now.</td></tr>'; return postHeight(); }
 
     body.innerHTML = data.teams.map(function(t){
-      var form = (t.form||"").split("").slice(-5).map(function(r){return '<span class="f '+r+'">'+r+'</span>';}).join("");
+      var form = (t.form||"").split("").slice(0,5).map(function(r){return '<span class="f '+r+'">'+r+'</span>';}).join("");
       var gd = t.gd>0 ? "+"+t.gd : t.gd;
       return '<tr>'+
         '<td class="rank">'+t.rank+'</td>'+
