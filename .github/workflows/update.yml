@@ -1,24 +1,29 @@
 name: Update ladder
 
+# One long-running job refreshes the standings every 15 minutes for ~5.5 hours,
+# then starts its own replacement. This avoids GitHub's unreliable cron timing.
 on:
-  schedule:
-    - cron: "*/15 * * * *"  # every 15 min (GitHub can delay scheduled runs)
+  workflow_dispatch:
   push:
     branches: [main]
-    paths: ["scripts/**", ".github/workflows/**"]
-  workflow_dispatch:         # "Run workflow" button for a manual refresh
+    paths: ["scripts/**", ".github/workflows/update.yml"]
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
-  group: ladder
-  cancel-in-progress: false
+  group: ladder-loop
+  cancel-in-progress: true   # a new loop replaces the old one
+
+env:
+  INTERVAL_MIN: 15
+  RUN_FOR_MIN: 330
 
 jobs:
-  scrape:
+  loop:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 350
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -26,13 +31,26 @@ jobs:
           node-version: 20
       - run: npm install --no-save playwright@1
       - run: npx playwright install --with-deps chromium
-      - run: node scripts/scrape.mjs
-      - name: Commit if changed
+      - name: Refresh every ${{ env.INTERVAL_MIN }} min
         run: |
-          if [[ -n "$(git status --porcelain data)" ]]; then
-            git config user.name "ladder-bot"
-            git config user.email "ladder-bot@users.noreply.github.com"
-            git add data
-            git commit -m "Update ladder"
-            git push
-          fi
+          git config user.name "ladder-bot"
+          git config user.email "ladder-bot@users.noreply.github.com"
+          end=$(( $(date +%s) + RUN_FOR_MIN*60 ))
+          while [ "$(date +%s)" -lt "$end" ]; do
+            start=$(date +%s)
+            echo "::group::Scrape $(date -u +%H:%M:%SZ)"
+            git pull -q --rebase || true
+            node scripts/scrape.mjs || echo "scrape failed, keeping last good data"
+            if [[ -n "$(git status --porcelain data)" ]]; then
+              git add data
+              git commit -qm "Update ladder"
+              git push -q || (git pull -q --rebase && git push -q) || echo "push failed"
+            fi
+            echo "::endgroup::"
+            sleep $(( INTERVAL_MIN*60 - ($(date +%s) - start) > 0 ? INTERVAL_MIN*60 - ($(date +%s) - start) : 0 ))
+          done
+      - name: Start the next loop
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run update.yml --ref main
