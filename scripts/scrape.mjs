@@ -21,26 +21,44 @@ for (const [key, id] of Object.entries(DIVISIONS)) {
     await page.waitForSelector("table tbody tr td", { timeout: 60000 });
     await page.waitForTimeout(2000); // let the table finish rendering
 
-    const teams = await page.$$eval("table tbody tr", trs => {
+    const teams = await page.$$eval("table", tables => {
+      const table = tables.find(t => t.querySelector("tbody tr td"));
       const num = s => (s === "" || isNaN(Number(s)) ? 0 : Number(s));
-      const rows = trs
-        .map(tr => [...tr.querySelectorAll("td")].map(td => ({
-          text: td.innerText.trim(),
-          img: td.querySelector("img")?.src || null,
-        })))
-        .filter(r => r.length >= 15);
+      // Map columns by header text, so layout changes (e.g. Rank and Team
+      // split into two columns on wide screens) don't shift the data.
+      const heads = [...table.querySelectorAll("thead th")].map(th =>
+        th.innerText.replace(/\s+/g, " ").trim().toLowerCase());
+      const col = test => heads.findIndex(test);
+      const iRank = col(h => h.startsWith("rank"));
+      const iTeam = col(h => h.includes("team"));
+      const iP = col(h => h === "p"), iW = col(h => h === "w"), iL = col(h => h === "l"), iD = col(h => h === "d");
+      const iF = col(h => h === "f"), iA = col(h => h === "a"), iPts = col(h => h === "pts"), iGd = col(h => h === "gd");
+      const iForm = col(h => h.includes("last 5") || h.includes("latest"));
+      const iNext = col(h => h === "next");
+
+      const rows = [...table.querySelectorAll("tbody tr")]
+        .map(tr => [...tr.querySelectorAll("td")])
+        .filter(c => c.length >= heads.length - 1 && c.length > 5);
+      const txt = (c, i) => (i >= 0 && c[i] ? c[i].innerText.trim() : "");
+      const img = (c, i) => (i >= 0 && c[i] ? c[i].querySelector("img")?.src || null : null);
+
       const logoToName = {};
-      // Columns: Rank/Team, P, W, L, D, B, FW, FL, F, A, PTS, H2H, GD, Last 5, Next
-      const teams = rows.map(r => {
-        const [rank, ...nameParts] = r[0].text.split("\n");
-        const name = nameParts.join(" ").trim();
-        if (r[0].img) logoToName[r[0].img] = name;
+      const teams = rows.map(c => {
+        let rank, name;
+        if (iRank === iTeam) {                 // combined "Rank Team" column
+          const [r, ...n] = txt(c, iTeam).split("\n");
+          rank = r; name = n.join(" ").trim();
+        } else {
+          rank = txt(c, iRank); name = txt(c, iTeam).replace(/\s+/g, " ").trim();
+        }
+        const logo = img(c, iTeam);
+        if (logo) logoToName[logo] = name;
         return {
-          rank: num(rank), name, logo: r[0].img,
-          p: num(r[1].text), w: num(r[2].text), l: num(r[3].text), d: num(r[4].text),
-          f: num(r[8].text), a: num(r[9].text), pts: num(r[10].text), gd: num(r[12].text),
-          form: r[13].text.replace(/[^WLD]/g, ""),
-          nextLogo: r[14].img,
+          rank: num(rank), name, logo,
+          p: num(txt(c, iP)), w: num(txt(c, iW)), l: num(txt(c, iL)), d: num(txt(c, iD)),
+          f: num(txt(c, iF)), a: num(txt(c, iA)), pts: num(txt(c, iPts)), gd: num(txt(c, iGd)),
+          form: txt(c, iForm).replace(/[^WLD]/g, ""),   // latest game first
+          nextLogo: img(c, iNext),
         };
       });
       teams.forEach(t => (t.next = logoToName[t.nextLogo] || ""));
@@ -48,7 +66,7 @@ for (const [key, id] of Object.entries(DIVISIONS)) {
     });
     await page.close();
 
-    if (teams.length === 0) throw new Error("no rows found – page layout may have changed");
+    if (teams.length === 0 || teams.some(t => !t.name)) throw new Error("table not parsed – page layout may have changed");
 
     const file = `data/${key}.json`;
     if (existsSync(file)) {
