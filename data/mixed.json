@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T23:07:45.697Z",
+ "updated": "2026-11-07T23:47:46.162Z",
  "teams": [
   {
    "rank": 1,
@@ -46,8 +46,8 @@
    "pts": 12,
    "gd": 11,
    "form": "WWWLW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228398_San%20Francisco%20Stars%20-%20Mixed.blob?generation=1793306203047381&alt=media",
-   "next": "San Francisco Stars - Mixed"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235746_Vancouver%20Comets%20Fire.blob?generation=1793306343645769&alt=media",
+   "next": "Vancouver Comets Fire"
   },
   {
    "rank": 4,
@@ -62,8 +62,8 @@
    "pts": 11,
    "gd": 23,
    "form": "WLDWW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235745_Rising%20Stars.blob?generation=1793306157151335&alt=media",
-   "next": "Rising Stars"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235743_Emerald%20City.blob?generation=1793306041854278&alt=media",
+   "next": "Emerald City"
   },
   {
    "rank": 5,
@@ -94,8 +94,8 @@
    "pts": 6,
    "gd": -20,
    "form": "LWLWL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235743_Emerald%20City.blob?generation=1793306041854278&alt=media",
-   "next": "Emerald City"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228398_San%20Francisco%20Stars%20-%20Mixed.blob?generation=1793306203047381&alt=media",
+   "next": "San Francisco Stars - Mixed"
   },
   {
    "rank": 7,
@@ -110,8 +110,8 @@
    "pts": 5,
    "gd": -32,
    "form": "DLWLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235741_Texas%20Mixed.blob?generation=1793306301431956&alt=media",
-   "next": "Texas Mixed"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228386_Mercenaries.blob?generation=1793306104647602&alt=media",
+   "next": "Mercenaries"
   },
   {
    "rank": 8,
@@ -126,8 +126,8 @@
    "pts": 3,
    "gd": -48,
    "form": "LWLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228394_Santa%20Monica%20Spirits%20Blaze.blob?generation=1793306220050196&alt=media",
-   "next": "Santa Monica Spirits Blaze"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235741_Texas%20Mixed.blob?generation=1793306301431956&alt=media",
+   "next": "Texas Mixed"
   },
   {
    "rank": 9,
@@ -158,8 +158,8 @@
    "pts": 0,
    "gd": -17,
    "form": "LLLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228386_Mercenaries.blob?generation=1793306104647602&alt=media",
-   "next": "Mercenaries"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228396_North%20Shore%20United.blob?generation=1793306135740725&alt=media",
+   "next": "North Shore United"
   }
  ]
 }
