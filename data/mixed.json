@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T21:47:46.576Z",
+ "updated": "2026-11-07T22:17:45.721Z",
  "teams": [
   {
    "rank": 1,
@@ -14,8 +14,8 @@
    "pts": 12,
    "gd": 63,
    "form": "WWWW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228398_San%20Francisco%20Stars%20-%20Mixed.blob?generation=1793306203047381&alt=media",
-   "next": "San Francisco Stars - Mixed"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235746_Vancouver%20Comets%20Fire.blob?generation=1793306343645769&alt=media",
+   "next": "Vancouver Comets Fire"
   },
   {
    "rank": 2,
@@ -110,8 +110,8 @@
    "pts": 3,
    "gd": -31,
    "form": "WLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228396_North%20Shore%20United.blob?generation=1793306135740725&alt=media",
-   "next": "North Shore United"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228392_Chicago%20Mixed.blob?generation=1793305948251731&alt=media",
+   "next": "Chicago Mixed"
   },
   {
    "rank": 8,
@@ -126,8 +126,8 @@
    "pts": 3,
    "gd": -32,
    "form": "LWLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228392_Chicago%20Mixed.blob?generation=1793305948251731&alt=media",
-   "next": "Chicago Mixed"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228394_Santa%20Monica%20Spirits%20Blaze.blob?generation=1793306220050196&alt=media",
+   "next": "Santa Monica Spirits Blaze"
   },
   {
    "rank": 9,
@@ -158,8 +158,8 @@
    "pts": 0,
    "gd": -36,
    "form": "LLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235743_Emerald%20City.blob?generation=1793306041854278&alt=media",
-   "next": "Emerald City"
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228398_San%20Francisco%20Stars%20-%20Mixed.blob?generation=1793306203047381&alt=media",
+   "next": "San Francisco Stars - Mixed"
   }
  ]
 }
