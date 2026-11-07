@@ -1,0 +1,35 @@
+name: Update ladder
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"   # every 5 min (GitHub can delay scheduled runs)
+  workflow_dispatch:         # "Run workflow" button for a manual refresh
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ladder
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-save playwright@1
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/scrape.mjs
+      - name: Commit if changed
+        run: |
+          if [[ -n "$(git status --porcelain data)" ]]; then
+            git config user.name "ladder-bot"
+            git config user.email "ladder-bot@users.noreply.github.com"
+            git add data
+            git commit -m "Update ladder"
+            git push
+          fi

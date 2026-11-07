@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>U.S. Open Netball Championships 2026 – Standings</title>
+<style>
+  /* Swap these to match your brand */
+  :root{
+    --brand:#0B1F4B; --accent:#E4002B;
+    --win:#1A7F4B; --loss:#C62828; --draw:#9CA3AF;
+    --ink:#14161A; --muted:#6B7280; --line:#E7E9EE; --zebra:#F7F8FA;
+    --font:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:transparent}
+  .nl{font-family:var(--font);color:var(--ink);max-width:900px;margin:0 auto}
+  .nl-head{background:var(--brand);color:#fff;padding:16px 20px 0;border-radius:12px 12px 0 0}
+  .nl-top{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap}
+  .nl-head h2{margin:0;font-size:20px;line-height:1.2}
+  .nl-head p{margin:3px 0 0;font-size:13px;opacity:.8}
+  .nl-updated{font-size:12px;opacity:.75;white-space:nowrap;padding-top:4px}
+  .nl-tabs{display:flex;gap:4px;margin-top:14px}
+  .nl-tab{appearance:none;border:0;background:transparent;color:#fff;opacity:.7;font:600 14px var(--font);padding:10px 14px;border-bottom:3px solid transparent;cursor:pointer}
+  .nl-tab[aria-selected="true"]{opacity:1;border-bottom-color:var(--accent)}
+  .nl-tab:focus-visible{outline:2px solid #fff;outline-offset:-2px}
+  .nl-card{border:1px solid var(--line);border-top:0;border-radius:0 0 12px 12px;overflow:hidden;background:#fff}
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted);font-weight:600;padding:10px 8px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:10px 8px;text-align:center;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+  th.team,td.team{text-align:left}
+  tbody tr:nth-child(even){background:var(--zebra)}
+  tbody tr:last-child td{border-bottom:0}
+  .rank{width:32px;color:var(--muted);font-weight:600}
+  .team-cell{display:flex;align-items:center;gap:10px}
+  .logo{width:28px;height:28px;border-radius:50%;object-fit:cover;background:#fff;border:1px solid var(--line);flex:none}
+  .name{font-weight:600;line-height:1.25}
+  .pts{font-weight:800;color:var(--accent)}
+  .pos{color:var(--win)} .neg{color:var(--loss)}
+  .form{display:inline-flex;gap:3px}
+  .f{width:20px;height:20px;border-radius:4px;color:#fff;font-size:11px;font-weight:700;display:inline-grid;place-items:center}
+  .f.W{background:var(--win)} .f.L{background:var(--loss)} .f.D{background:var(--draw)}
+  .next img{width:24px;height:24px;border-radius:50%;object-fit:cover;border:1px solid var(--line);vertical-align:middle}
+  .nl-msg{padding:28px;text-align:center;color:var(--muted);font-size:14px}
+  .nl-foot{font-size:11px;color:var(--muted);padding:8px 4px}
+
+  /* Tablet: drop the detail columns */
+  @media (max-width:720px){
+    .c-d,.c-f,.c-a,.c-next{display:none}
+  }
+  /* Phone: compact rows, keep P / W / L / GD / Pts */
+  @media (max-width:480px){
+    .nl-head{padding:14px 14px 0}
+    .nl-head h2{font-size:17px}
+    .c-form{display:none}
+    table{font-size:13px}
+    th,td{padding:9px 4px}
+    th{font-size:10px;letter-spacing:.3px}
+    .rank{width:24px}
+    .logo{width:22px;height:22px}
+    .team-cell{gap:7px}
+    .nl-tab{padding:9px 12px;font-size:13px}
+  }
+  @media (max-width:340px){ .c-l{display:none} }
+</style>
+</head>
+<body>
+<div class="nl">
+  <div class="nl-head">
+    <div class="nl-top">
+      <div>
+        <h2>U.S. Open Netball Championships 2026</h2>
+        <p id="nl-sub">Standings</p>
+      </div>
+      <div class="nl-updated" id="nl-updated"></div>
+    </div>
+    <div class="nl-tabs" role="tablist" id="nl-tabs">
+      <button class="nl-tab" role="tab" data-d="ladies">Ladies</button>
+      <button class="nl-tab" role="tab" data-d="mixed">Mixed</button>
+    </div>
+  </div>
+  <div class="nl-card">
+    <table>
+      <thead>
+        <tr>
+          <th>#</th><th class="team">Team</th><th>P</th><th>W</th><th class="c-l">L</th>
+          <th class="c-d">D</th><th class="c-f">F</th><th class="c-a">A</th>
+          <th>GD</th><th>Pts</th><th class="c-form">Form</th><th class="c-next">Next</th>
+        </tr>
+      </thead>
+      <tbody id="nl-body"><tr><td colspan="12" class="nl-msg">Loading standings…</td></tr></tbody>
+    </table>
+  </div>
+  <div class="nl-foot">Source: NetballConnect live scores. Refreshes automatically.</div>
+</div>
+
+<script>
+(function(){
+  var LABEL = { ladies: "Ladies", mixed: "Mixed" };
+  var params = new URLSearchParams(location.search);
+  var locked = params.get("d");                 // ?d=ladies or ?d=mixed shows one division only
+  var current = LABEL[locked] ? locked : (params.get("start") === "mixed" ? "mixed" : "ladies");
+  var cache = {};
+
+  if (LABEL[locked]) document.getElementById("nl-tabs").style.display = "none";
+
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+  function render(){
+    document.querySelectorAll(".nl-tab").forEach(function(b){
+      b.setAttribute("aria-selected", b.dataset.d === current ? "true" : "false");
+    });
+    document.getElementById("nl-sub").textContent = LABEL[current] + " division · Standings";
+    var data = cache[current], body = document.getElementById("nl-body");
+    if (!data){ body.innerHTML = '<tr><td colspan="12" class="nl-msg">Loading standings…</td></tr>'; return postHeight(); }
+    if (data.error){ body.innerHTML = '<tr><td colspan="12" class="nl-msg">Standings are unavailable right now.</td></tr>'; return postHeight(); }
+
+    body.innerHTML = data.teams.map(function(t){
+      var form = (t.form||"").split("").slice(-5).map(function(r){return '<span class="f '+r+'">'+r+'</span>';}).join("");
+      var gd = t.gd>0 ? "+"+t.gd : t.gd;
+      return '<tr>'+
+        '<td class="rank">'+t.rank+'</td>'+
+        '<td class="team"><div class="team-cell">'+(t.logo?'<img class="logo" src="'+esc(t.logo)+'" alt="" loading="lazy" onerror="this.style.visibility=\'hidden\'">':'')+'<span class="name">'+esc(t.name)+'</span></div></td>'+
+        '<td>'+t.p+'</td><td>'+t.w+'</td><td class="c-l">'+t.l+'</td>'+
+        '<td class="c-d">'+t.d+'</td><td class="c-f">'+t.f+'</td><td class="c-a">'+t.a+'</td>'+
+        '<td class="'+(t.gd>0?"pos":t.gd<0?"neg":"")+'">'+gd+'</td>'+
+        '<td class="pts">'+t.pts+'</td>'+
+        '<td class="c-form"><span class="form">'+form+'</span></td>'+
+        '<td class="c-next next">'+(t.nextLogo?'<img src="'+esc(t.nextLogo)+'" alt="'+esc(t.next)+'" title="Next: '+esc(t.next)+'" loading="lazy" onerror="this.style.display=\'none\'">':'')+'</td>'+
+      '</tr>';
+    }).join("");
+
+    var d = new Date(data.updated);
+    document.getElementById("nl-updated").textContent = "Updated " +
+      d.toLocaleString("en-US",{weekday:"short",hour:"numeric",minute:"2-digit",timeZoneName:"short"});
+    postHeight();
+  }
+
+  function load(div){
+    if (window.NL_SEED && window.NL_SEED[div]){ cache[div] = window.NL_SEED[div]; return Promise.resolve(); }
+    return fetch("data/"+div+".json?t="+Date.now(), {cache:"no-store"})
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(j){ cache[div] = j; })
+      .catch(function(){ if(!cache[div]) cache[div] = {error:true}; });
+  }
+
+  function refresh(){
+    var divs = LABEL[locked] ? [locked] : ["ladies","mixed"];
+    Promise.all(divs.map(load)).then(render);
+  }
+
+  // Tell the host page how tall we are, so the iframe fits with no inner scrollbar
+  function postHeight(){
+    try { parent.postMessage({ type:"nl-ladder-height", height: document.documentElement.scrollHeight, id: params.get("id") || "" }, "*"); } catch(e){}
+  }
+  window.addEventListener("resize", postHeight);
+  window.addEventListener("load", postHeight);
+  document.addEventListener("load", function(e){ if(e.target.tagName==="IMG") postHeight(); }, true);
+
+  document.getElementById("nl-tabs").addEventListener("click", function(e){
+    var b = e.target.closest(".nl-tab"); if (!b) return;
+    current = b.dataset.d; render();
+  });
+
+  refresh();
+  setInterval(refresh, 60000);   // pick up new results every minute
+})();
+</script>
+</body>
+</html>
