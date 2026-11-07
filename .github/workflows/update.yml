@@ -3,6 +3,9 @@ name: Update ladder
 on:
   schedule:
     - cron: "*/15 * * * *"  # every 15 min (GitHub can delay scheduled runs)
+  push:
+    branches: [main]
+    paths: ["scripts/**", ".github/workflows/**"]
   workflow_dispatch:         # "Run workflow" button for a manual refresh
 
 permissions:
