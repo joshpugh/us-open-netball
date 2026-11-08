@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T02:07:42.382Z",
+ "updated": "2026-11-08T02:37:42.662Z",
  "teams": [
   {
    "rank": 1,
@@ -14,8 +14,8 @@
    "pts": 27,
    "gd": 118,
    "form": "WWWLW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228387_Denver%20Blizzards%20Force.blob?generation=1793305989719977&alt=media",
-   "next": "Denver Blizzards Force"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 2,
@@ -30,8 +30,8 @@
    "pts": 27,
    "gd": 68,
    "form": "WLWWW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228397_San%20Francisco%20Stars%20-%20Ladies.blob?generation=1793306192204357&alt=media",
-   "next": "San Francisco Stars - Ladies"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 3,
@@ -46,8 +46,8 @@
    "pts": 26,
    "gd": 29,
    "form": "LWWWW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228393_Santa%20Monica%20Spirits%20Heat.blob?generation=1793306246795223&alt=media",
-   "next": "Santa Monica Spirits Heat"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 4,
@@ -62,8 +62,8 @@
    "pts": 24,
    "gd": 53,
    "form": "WLWWW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228403_Texas%20Bluebonnets.blob?generation=1793306284163543&alt=media",
-   "next": "Texas Bluebonnets"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 5,
@@ -110,8 +110,8 @@
    "pts": 14,
    "gd": -5,
    "form": "WWWLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228400_Dorchester%20United%20Sports%20Club.blob?generation=1793306021057737&alt=media",
-   "next": "Dorchester United Sports Club"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 8,
@@ -190,8 +190,8 @@
    "pts": 0,
    "gd": -98,
    "form": "LLLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228390_Chicago%20Ladies.blob?generation=1793305936441239&alt=media",
-   "next": "Chicago Ladies"
+   "nextLogo": null,
+   "next": ""
   }
  ]
 }
