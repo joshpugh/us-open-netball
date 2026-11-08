@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T08:48:50.646Z",
+ "updated": "2026-11-08T08:58:51.033Z",
  "teams": [
   {
    "rank": 1,
@@ -14,8 +14,8 @@
    "pts": 30,
    "gd": 60,
    "form": "WWWLW",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235744_Tampa%20Bay%20Panthers.blob?generation=1793306267309886&alt=media",
+   "next": "Tampa Bay Panthers"
   },
   {
    "rank": 2,
@@ -30,8 +30,8 @@
    "pts": 30,
    "gd": 131,
    "form": "WWWWL",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235742_Santa%20Monica%20Spirits%20Flare.blob?generation=1793306233852111&alt=media",
+   "next": "Santa Monica Spirits Flare"
   },
   {
    "rank": 3,
@@ -46,8 +46,8 @@
    "pts": 27,
    "gd": 62,
    "form": "LWLWW",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228395_Alberta%20Wild%20Roses.blob?generation=1793073888911368&alt=media",
+   "next": "Alberta Wild Roses"
   },
   {
    "rank": 4,
@@ -94,8 +94,8 @@
    "pts": 18,
    "gd": 33,
    "form": "WLLLL",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228403_Texas%20Bluebonnets.blob?generation=1793306284163543&alt=media",
+   "next": "Texas Bluebonnets"
   },
   {
    "rank": 7,
@@ -110,8 +110,8 @@
    "pts": 17,
    "gd": -4,
    "form": "LLLLL",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228393_Santa%20Monica%20Spirits%20Heat.blob?generation=1793306246795223&alt=media",
+   "next": "Santa Monica Spirits Heat"
   },
   {
    "rank": 8,
@@ -126,8 +126,8 @@
    "pts": 12,
    "gd": -21,
    "form": "WWWWL",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228397_San%20Francisco%20Stars%20-%20Ladies.blob?generation=1793306192204357&alt=media",
+   "next": "San Francisco Stars - Ladies"
   },
   {
    "rank": 9,

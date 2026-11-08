@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T03:08:21.995Z",
+ "updated": "2026-11-08T08:58:54.549Z",
  "teams": [
   {
    "rank": 1,
@@ -62,8 +62,8 @@
    "pts": 18,
    "gd": 34,
    "form": "LWLWL",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235746_Vancouver%20Comets%20Fire.blob?generation=1793306343645769&alt=media",
+   "next": "Vancouver Comets Fire"
   },
   {
    "rank": 5,
@@ -78,8 +78,8 @@
    "pts": 16,
    "gd": -7,
    "form": "WLDLW",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228391_The%20Outlaws.blob?generation=1793306322281744&alt=media",
+   "next": "The Outlaws"
   },
   {
    "rank": 6,
@@ -110,8 +110,8 @@
    "pts": 10,
    "gd": -35,
    "form": "WLDWD",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235745_Rising%20Stars.blob?generation=1793306157151335&alt=media",
+   "next": "Rising Stars"
   },
   {
    "rank": 8,
@@ -126,8 +126,8 @@
    "pts": 8,
    "gd": -65,
    "form": "WLLLD",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228398_San%20Francisco%20Stars%20-%20Mixed.blob?generation=1793306203047381&alt=media",
+   "next": "San Francisco Stars - Mixed"
   },
   {
    "rank": 9,
@@ -142,8 +142,8 @@
    "pts": 5,
    "gd": -63,
    "form": "LDLLL",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235743_Emerald%20City.blob?generation=1793306041854278&alt=media",
+   "next": "Emerald City"
   },
   {
    "rank": 10,
@@ -158,8 +158,8 @@
    "pts": 0,
    "gd": -50,
    "form": "LLLLL",
-   "nextLogo": null,
-   "next": ""
+   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228392_Chicago%20Mixed.blob?generation=1793305948251731&alt=media",
+   "next": "Chicago Mixed"
   }
  ]
 }
