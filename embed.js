@@ -74,7 +74,7 @@
       '<th class="c-d">D</th><th class="c-f">F</th><th class="c-a">A</th>' +
       '<th>GD</th><th>Pts</th><th class="c-form" title="Last 5 games, latest first">Form</th><th class="c-next">Next</th>' +
       '</tr></thead><tbody><tr><td colspan="12" class="msg">Loading standings…</td></tr></tbody></table></div>' +
-      '<div class="foot">Source: NetballConnect live scores. Updates automatically.</div></div>';
+      '<div class="foot">Unofficial results for informational purposes only. Official results are on NetballConnect. Updates automatically.</div></div>';
 
     var tbody = root.querySelector("tbody");
     var upd = root.querySelector(".upd");
