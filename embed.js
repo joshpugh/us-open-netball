@@ -67,7 +67,7 @@
       '<div class="nl' + (showHead ? "" : " no-head") + '">' +
       (showHead
         ? '<div class="head"><div><h3>U.S. Open Netball Championships 2026</h3><p>' + LABEL[div] +
-          ' · Standings</p></div><div class="upd"></div></div>'
+          ' · Standings (Unofficial)</p></div><div class="upd"></div></div>'
         : "") +
       '<div class="card"><table><thead><tr>' +
       '<th>#</th><th class="team">Team</th><th>P</th><th>W</th><th class="c-l">L</th>' +

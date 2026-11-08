@@ -71,7 +71,7 @@
     <div class="nl-top">
       <div>
         <h2>U.S. Open Netball Championships 2026</h2>
-        <p id="nl-sub">Standings</p>
+        <p id="nl-sub">Standings (Unofficial)</p>
       </div>
       <div class="nl-updated" id="nl-updated"></div>
     </div>
@@ -111,7 +111,7 @@
     document.querySelectorAll(".nl-tab").forEach(function(b){
       b.setAttribute("aria-selected", b.dataset.d === current ? "true" : "false");
     });
-    document.getElementById("nl-sub").textContent = LABEL[current] + " division · Standings";
+    document.getElementById("nl-sub").textContent = LABEL[current] + " division · Standings (Unofficial)";
     var data = cache[current], body = document.getElementById("nl-body");
     if (!data){ body.innerHTML = '<tr><td colspan="12" class="nl-msg">Loading standings…</td></tr>'; return postHeight(); }
     if (data.error){ body.innerHTML = '<tr><td colspan="12" class="nl-msg">Standings are unavailable right now.</td></tr>'; return postHeight(); }
