@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T09:08:54.717Z",
+ "updated": "2026-11-08T16:09:32.735Z",
  "teams": [
   {
    "rank": 1,
@@ -110,8 +110,8 @@
    "pts": 10,
    "gd": -35,
    "form": "WLDWD",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235745_Rising%20Stars.blob?generation=1793306157151335&alt=media",
-   "next": "Rising Stars"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 8,
@@ -126,8 +126,8 @@
    "pts": 8,
    "gd": -65,
    "form": "WLLLD",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228398_San%20Francisco%20Stars%20-%20Mixed.blob?generation=1793306203047381&alt=media",
-   "next": "San Francisco Stars - Mixed"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 9,
@@ -142,8 +142,8 @@
    "pts": 5,
    "gd": -63,
    "form": "LDLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235743_Emerald%20City.blob?generation=1793306041854278&alt=media",
-   "next": "Emerald City"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 10,
@@ -158,8 +158,8 @@
    "pts": 0,
    "gd": -50,
    "form": "LLLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228392_Chicago%20Mixed.blob?generation=1793305948251731&alt=media",
-   "next": "Chicago Mixed"
+   "nextLogo": null,
+   "next": ""
   }
  ]
 }
