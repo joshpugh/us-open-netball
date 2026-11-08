@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T20:10:03.176Z",
+ "updated": "2026-11-08T20:20:03.548Z",
  "teams": [
   {
    "rank": 1,
@@ -115,6 +115,22 @@
   },
   {
    "rank": 8,
+   "name": "Denver Blizzards Fury",
+   "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228388_Denver%20Blizzards%20Fury.blob?generation=1793306004516850&alt=media",
+   "p": 13,
+   "w": 4,
+   "l": 8,
+   "d": 1,
+   "f": 77,
+   "a": 118,
+   "pts": 14,
+   "gd": -41,
+   "form": "WWWLW",
+   "nextLogo": null,
+   "next": ""
+  },
+  {
+   "rank": 9,
    "name": "Tampa Bay Panthers",
    "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235744_Tampa%20Bay%20Panthers.blob?generation=1793306267309886&alt=media",
    "p": 13,
@@ -130,34 +146,18 @@
    "next": ""
   },
   {
-   "rank": 9,
-   "name": "Denver Blizzards Fury",
-   "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228388_Denver%20Blizzards%20Fury.blob?generation=1793306004516850&alt=media",
-   "p": 12,
-   "w": 3,
-   "l": 8,
-   "d": 1,
-   "f": 60,
-   "a": 108,
-   "pts": 11,
-   "gd": -48,
-   "form": "WWLWL",
-   "nextLogo": null,
-   "next": ""
-  },
-  {
    "rank": 10,
    "name": "Las Vegas Silver Foxes",
    "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235748_Las%20Vegas%20Silver%20Foxes.blob?generation=1793306085487061&alt=media",
-   "p": 12,
+   "p": 13,
    "w": 3,
-   "l": 9,
+   "l": 10,
    "d": 0,
-   "f": 73,
-   "a": 141,
+   "f": 83,
+   "a": 158,
    "pts": 9,
-   "gd": -68,
-   "form": "WLWLL",
+   "gd": -75,
+   "form": "LWLWL",
    "nextLogo": null,
    "next": ""
   },
