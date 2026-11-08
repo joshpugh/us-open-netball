@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T16:09:32.735Z",
+ "updated": "2026-11-08T17:09:33.130Z",
  "teams": [
   {
    "rank": 1,
@@ -62,8 +62,8 @@
    "pts": 18,
    "gd": 34,
    "form": "LWLWL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235746_Vancouver%20Comets%20Fire.blob?generation=1793306343645769&alt=media",
-   "next": "Vancouver Comets Fire"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 5,
@@ -78,8 +78,8 @@
    "pts": 16,
    "gd": -7,
    "form": "WLDLW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228391_The%20Outlaws.blob?generation=1793306322281744&alt=media",
-   "next": "The Outlaws"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 6,
