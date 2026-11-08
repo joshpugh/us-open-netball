@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T17:39:33.572Z",
+ "updated": "2026-11-08T18:19:33.876Z",
  "teams": [
   {
    "rank": 1,
@@ -35,6 +35,22 @@
   },
   {
    "rank": 3,
+   "name": "The Outlaws",
+   "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228391_The%20Outlaws.blob?generation=1793306322281744&alt=media",
+   "p": 10,
+   "w": 7,
+   "l": 3,
+   "d": 0,
+   "f": 115,
+   "a": 67,
+   "pts": 21,
+   "gd": 48,
+   "form": "WLWLW",
+   "nextLogo": null,
+   "next": ""
+  },
+  {
+   "rank": 4,
    "name": "Mercenaries",
    "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228386_Mercenaries.blob?generation=1793306104647602&alt=media",
    "p": 9,
@@ -50,34 +66,18 @@
    "next": ""
   },
   {
-   "rank": 4,
-   "name": "The Outlaws",
-   "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228391_The%20Outlaws.blob?generation=1793306322281744&alt=media",
-   "p": 9,
-   "w": 6,
-   "l": 3,
-   "d": 0,
-   "f": 92,
-   "a": 58,
-   "pts": 18,
-   "gd": 34,
-   "form": "LWLWL",
-   "nextLogo": null,
-   "next": ""
-  },
-  {
    "rank": 5,
    "name": "Vancouver Comets Fire",
    "logo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235746_Vancouver%20Comets%20Fire.blob?generation=1793306343645769&alt=media",
-   "p": 9,
+   "p": 10,
    "w": 4,
-   "l": 3,
+   "l": 4,
    "d": 2,
-   "f": 67,
-   "a": 74,
+   "f": 76,
+   "a": 97,
    "pts": 16,
-   "gd": -7,
-   "form": "WLDLW",
+   "gd": -21,
+   "form": "LWLDL",
    "nextLogo": null,
    "next": ""
   },
