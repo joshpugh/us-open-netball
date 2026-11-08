@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T02:07:46.259Z",
+ "updated": "2026-11-08T02:17:46.107Z",
  "teams": [
   {
    "rank": 1,
@@ -30,8 +30,8 @@
    "pts": 21,
    "gd": 43,
    "form": "WWWWW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228391_The%20Outlaws.blob?generation=1793306322281744&alt=media",
-   "next": "The Outlaws"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 3,
@@ -62,8 +62,8 @@
    "pts": 18,
    "gd": 38,
    "form": "WLWLW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228394_Santa%20Monica%20Spirits%20Blaze.blob?generation=1793306220050196&alt=media",
-   "next": "Santa Monica Spirits Blaze"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 5,
@@ -126,8 +126,8 @@
    "pts": 5,
    "gd": -61,
    "form": "DLLLW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235743_Emerald%20City.blob?generation=1793306041854278&alt=media",
-   "next": "Emerald City"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 9,
@@ -142,8 +142,8 @@
    "pts": 5,
    "gd": -67,
    "form": "LLLDL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228398_San%20Francisco%20Stars%20-%20Mixed.blob?generation=1793306203047381&alt=media",
-   "next": "San Francisco Stars - Mixed"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 10,
