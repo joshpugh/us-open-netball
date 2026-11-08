@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T17:29:33.278Z",
+ "updated": "2026-11-08T17:39:33.572Z",
  "teams": [
   {
    "rank": 1,
@@ -46,8 +46,8 @@
    "pts": 20,
    "gd": 41,
    "form": "LWWWW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235741_Texas%20Mixed.blob?generation=1793306301431956&alt=media",
-   "next": "Texas Mixed"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 4,
@@ -110,8 +110,8 @@
    "pts": 11,
    "gd": -23,
    "form": "LDWLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228386_Mercenaries.blob?generation=1793306104647602&alt=media",
-   "next": "Mercenaries"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 8,
