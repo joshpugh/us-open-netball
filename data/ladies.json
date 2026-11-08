@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T02:37:42.662Z",
+ "updated": "2026-11-08T02:47:41.974Z",
  "teams": [
   {
    "rank": 1,
@@ -78,8 +78,8 @@
    "pts": 17,
    "gd": 1,
    "form": "LLLLW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228395_Alberta%20Wild%20Roses.blob?generation=1793073888911368&alt=media",
-   "next": "Alberta Wild Roses"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 6,
@@ -94,8 +94,8 @@
    "pts": 15,
    "gd": 29,
    "form": "LLLWW",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235742_Santa%20Monica%20Spirits%20Flare.blob?generation=1793306233852111&alt=media",
-   "next": "Santa Monica Spirits Flare"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 7,
@@ -126,8 +126,8 @@
    "pts": 6,
    "gd": -29,
    "form": "LLWWL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235744_Tampa%20Bay%20Panthers.blob?generation=1793306267309886&alt=media",
-   "next": "Tampa Bay Panthers"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 9,
@@ -142,8 +142,8 @@
    "pts": 6,
    "gd": -41,
    "form": "WWLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235747_Club%20Allyanze.blob?generation=1793305969556709&alt=media",
-   "next": "Club Allyanze"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 10,
@@ -158,8 +158,8 @@
    "pts": 6,
    "gd": -70,
    "form": "WLLWL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F228388_Denver%20Blizzards%20Fury.blob?generation=1793306004516850&alt=media",
-   "next": "Denver Blizzards Fury"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 11,
@@ -174,8 +174,8 @@
    "pts": 5,
    "gd": -55,
    "form": "WLLLL",
-   "nextLogo": "https://storage.googleapis.com/download/storage/v1/b/world-sport-action.appspot.com/o/%2Fteam%2F235748_Las%20Vegas%20Silver%20Foxes.blob?generation=1793306085487061&alt=media",
-   "next": "Las Vegas Silver Foxes"
+   "nextLogo": null,
+   "next": ""
   },
   {
    "rank": 12,
